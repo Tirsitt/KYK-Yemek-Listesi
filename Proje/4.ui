@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>505</width>
+    <height>563</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BEĞENDIĞINIZ YIYECEKLERI</string>
+  </property>
+  <widget class="QPushButton" name="sil">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>280</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Artık sevmediğiniz yiyecekleri aşağıdaki tablodan çıkarın.</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(237, 213, 175);</string>
+   </property>
+   <property name="text">
+    <string>SIL</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ekle">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>280</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Yukarıdaki tablodan beğendiğiniz yiyecekleri ekleyin.</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(237, 213, 175);</string>
+   </property>
+   <property name="text">
+    <string>EKLE</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="food_table">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>60</y>
+     <width>311</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Tekrarlanan yiyecekleri bir kez seçmek yeterlidir.</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(237, 213, 175);</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="goodFood">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>340</y>
+     <width>311</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(237, 213, 175);</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>10</y>
+     <width>211</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(237, 213, 175);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="name">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(237, 213, 175);</string>
+    </property>
+    <property name="text">
+     <string>Name</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="back">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>10</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(237, 213, 175);
+
+</string>
+    </property>
+    <property name="text">
+     <string>ÖNCEKI SAYFA</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>-40</y>
+     <width>731</width>
+     <height>631</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>Images.qrc/OIG6.jpg</pixmap>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>sil</zorder>
+  <zorder>ekle</zorder>
+  <zorder>food_table</zorder>
+  <zorder>goodFood</zorder>
+  <zorder>frame</zorder>
+ </widget>
+ <resources>
+  <include location="Images.qrc/a.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>504</width>
+    <height>562</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>YEMEK LİSTESİ</string>
+  </property>
+  <property name="toolTip">
+   <string/>
+  </property>
+  <widget class="QTableWidget" name="food_table">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>111</y>
+     <width>311</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Her haftanın yemek listesini görmek için tablodan haftayı seçin ve &quot;SEÇ&quot; butonuna tıklayın</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(237, 213, 175);</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sec">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>410</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(237, 213, 175);</string>
+   </property>
+   <property name="text">
+    <string>SEÇ</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ara">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>60</y>
+     <width>311</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Aramak istediğiniz yiyeceği yazın</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(237, 213, 175);</string>
+   </property>
+   <property name="placeholderText">
+    <string>ara</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="back">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>410</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(237, 213, 175);</string>
+   </property>
+   <property name="text">
+    <string>ÖNCEKI SAYFA</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addGood">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>500</y>
+     <width>311</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Sevdiğiniz yiyecekleri seçin.</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(237, 213, 175);</string>
+   </property>
+   <property name="text">
+    <string>BEĞENDIĞINIZ YIYECEKLERI EKLEYIN</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="selectedfoods">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>320</y>
+     <width>311</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(237, 213, 175);</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="good">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>460</y>
+     <width>311</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Onay kutusu işaretlendiğinde, yalnızca sevdiğiniz yiyecekleri göreceksiniz.</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(237, 213, 175);</string>
+   </property>
+   <property name="text">
+    <string>SEVDİĞİM YİYECEKLERDEN</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>10</y>
+     <width>211</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(237, 213, 175);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="name">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(237, 213, 175);</string>
+    </property>
+    <property name="text">
+     <string>Name</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exit">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>10</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(237, 213, 175);
+</string>
+    </property>
+    <property name="text">
+     <string>ÇIKIŞ</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>-30</x>
+     <y>-50</y>
+     <width>731</width>
+     <height>631</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>Images.qrc/OIG6.jpg</pixmap>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>food_table</zorder>
+  <zorder>sec</zorder>
+  <zorder>ara</zorder>
+  <zorder>back</zorder>
+  <zorder>addGood</zorder>
+  <zorder>selectedfoods</zorder>
+  <zorder>good</zorder>
+  <zorder>frame</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
